@@ -1,0 +1,521 @@
+/* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+}
+
+.logo {
+  position: static;
+  left: 20px;
+  top: 20px;
+  width: 50px;
+  height: auto;
+  /*color: #333;*/
+/*font-size: 200px;
+  /*text-align: center;*/
+/* line-height: 50px;*/
+/*filter: invert(1);
+}
+
+.logo:hover {
+  color: #555;
+}
+
+:root {
+  --bg-color: #191919;
+  --second-bg-color: #101010;
+  --main-color: #e9204f;
+  --text-color: #fff;
+  --second-color: #e4e4e4;
+  --other-color: #c6c9d8bf;
+
+  --h1-font: 7rem;
+  --h2-font: 3.5rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 11%;
+  border-bottom: 1px solid transparent;
+  transition: all ease 0.5s;
+}
+
+.logo img {
+  width: 15%;
+  height: auto;
+}
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+  margin: 0 40px;
+  transition: all ease 0.4s;
+}
+/*Hovering the navbar buttons*/
+/*.navlist a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 42px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+/*Title, team name, our names section*/
+/*section {
+  padding: 100px 22% 100px;
+}
+
+/*Adding img in background*/
+/*.home {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: url(flights.png);
+  background-size: auto;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+h1 {
+  min-height: 50vh;
+}
+.hero-text h1 {
+  color: var(--second-color);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  word-spacing: 10px;
+}
+.hero-text h3 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  color: var(--text-color);
+  font-weight: 100;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.hero-text h4 {
+  color: var(--second-color);
+  font-size: 21px;
+  font-weight: 600;
+  word-spacing: 5px;
+  margin-bottom: 3.5rem;
+}
+header.sticky {
+  padding: 15px 11%;
+  background: #000;
+  border-bottom: 1px solid #4e5055;
+}
+.flight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  align-items: center;
+  gap: 4rem;
+}*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --bg-color: #191919;
+  --secont-bg-color: #101010;
+  --main-color: #D70026	;
+  --text-color: #ffff;
+  --second-color: #e4e4e4;
+  --other-color: #c6c9d8bf;
+
+  --h1-font: 7rem;
+  --h2-font: 3.5rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 11%;
+  border-bottom: 1px solid transparent;
+  transition: all ease 0.5s;
+}
+
+.navlist {
+  display: flex;
+  padding-left: 11%;
+}
+.navlist a {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+  margin: 0 40px;
+  transition: all ease 0.4s;
+}
+.navlist a:hover {
+  color: var(--main-color);
+}
+/*Reducing font size in navigation bar*/
+@media (min-width: 980px) {
+  .navlist > li > a {
+    font-size: 15px;
+  }
+}
+#menu-icon {
+  font-size: 42px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  padding: 120px 19% 100px;
+}
+.home {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: url(../static/pxfuel.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.hero-text h3 {
+  color: var(--second-color);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  word-spacing: 10px;
+}
+.hero-text h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h1-font);
+  color: var(--bg-color);
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.hero-text h4 {
+  color: var(--bg-color);
+  font-size: 25px;
+  font-weight: 600;
+  word-spacing: 15px;
+  margin-bottom: 3.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 45px;
+  background: var(--main-color);
+  color: var(--text-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+  border: 2px solid var(--main-color);
+  transition: all ease 0.5s;
+  border-radius: 25px;
+}
+.btn:hover {
+  transform: translate(5px);
+  background: transparent;
+  border: 2px solid var(--main-color);
+}
+
+header.sticky {
+  padding: 15px 11%;
+  background: #000;
+  border-bottom: 1px solid #4e5055;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+  gap: 8rem;
+}
+.about-img{
+  position: relative;
+  right: 15%;
+}
+.about-img img {
+  width: 120%;
+  height: auto;
+  border-radius: 15px;
+
+}
+.about-text h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.about-text h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+span {
+  color: var(--main-color);
+}
+.about-text p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  line-height: 50px;
+  margin-bottom: 5rem;
+}
+/*Vaibhav code from here*/
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.slide {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  color: #fff;
+}
+h2 {
+  text-align: center;
+}
+/*p {
+  text-align: auto;
+}
+*/
+img {
+  border-radius: 15px;
+  min-height:auto;
+  min-width: 600px;
+}
+.img_right {
+  position: relative;
+  bottom: 20%;
+  padding: 0px 0px 50% 60%;
+}
+.img_left {
+  position: absolute;
+  top: 45%;
+  right: 1%;
+  padding: 0px 60% 50% 0px;
+}
+.left > p {
+  padding: 100px 50% 0px 10px;
+  text-align: left;
+}
+.right > p {
+  padding: 100px 10px 0px 50%;
+  text-align: right;
+}
+.Indigo {
+  background: linear-gradient(to bottom, #020202, #080808);
+}
+.slide-Indigo h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.slide-Indigo p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.GoFirst {
+  background: linear-gradient(to bottom, #080808, #141414);
+}
+.slide-GoFirst h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.slide-GoFirst p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.Vistara {
+  background: linear-gradient(to bottom, #141414, #1c1c1c);
+}
+.slide-Vistara h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.slide-Vistara p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.AirAsia {
+  background: linear-gradient(to bottom, #1c1c1c, #232323);
+}
+.slide-AirAsia h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.slide-AirAsia p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.AirIndia {
+  background: linear-gradient(to bottom, #232323, #28282b);
+}
+.slide-AirIndia h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.slide-AirIndia p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.SpiceJet {
+  background: linear-gradient(to bottom, #28282b, #343434);
+}
+.slide-SpiceJet h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.slide-SpiceJet p {
+  font-size: 22px;
+  font-weight: 500;
+}
+/*Vaibhav code ends(edited)*/
+.scroll-bttn {
+  position: fixed;
+  right: 2.2rem;
+  bottom: 2.2rem;
+  color: var(--text-color);
+  background: var(--main-color);
+  font-size: 23px;
+  padding: 9px;
+  border-radius: 0.8rem;
+}
+.flight1 {
+  padding: 50px 22% 180px;
+  background: var(--secont-bg-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.flight2 {
+  padding: 50px 22% 200px;
+}
+.flight4 {
+  padding: 50px 22% 200px;
+}
+.flight3 {
+  padding: 50px 22% 170px;
+  background: var(--secont-bg-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.flight5 {
+  padding: 50px 22% 170px;
+  background: var(--secont-bg-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.img_right img {
+  width: 100%;
+  height: auto;
+}
+.img_left img {
+  width: 100%;
+  height: auto;
+}
+.end-section {
+  padding: 80px 19% 70px;
+  background: var(--secont-bg-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.end-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.end-section p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.end-section i {
+  height: 40px;
+  width: 40px;
+  background: var(--main-color);
+  color: var(--text-color);
+  border: 2px solid var(--main-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 0 9px;
+  transition: all ease 0.5s;
+}
+.end-section i:hover {
+  transform: translateY(-5px);
+  background: transparent;
+  border: 2px solid var(--main-color);
+}
+
+.viewheight{
+  height: 80vh;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Data Analysis</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='flightproject.css') }}">
+
+    <!-- Box icon link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#flight1">Indigo</a></li>
+            <li><a href="#flight2">GoFirst</a></li>
+            <li><a href="#flight3">Vistara</a></li>
+            <li><a href="#flight4">Air Asia</a></li>
+            <li><a href="#flight5">Air India</a></li>
+            <li><a href="#flight6">SpiceJet</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+        <div class="hero-text">
+            <h1>Flight Data Analysis</h1>
+            <h4>Jaswant - Hamza - Vaibhav - Shiva - Satya</h4>
+            <a href="#flight1" class="btn">Our Project</a>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{{ url_for('static', filename='pexels-anna-nekrashevich-6801648.jpg') }}" alt="About Image">
+        </div>
+
+        <div class="about-text">
+            <h2>About Our Project</h2>
+            <h5>
+                Project focused on flight 
+                <span> data analysis in India</span>
+            </h5>
+            
+            <a href="https://github.com/VaibhavMugulavalli/Flight-Data-Analysis" class="btn">Github</a>
+        </div>
+    </section>
+
+    <!-- Flight 1 section -->
+    <section class="flight1 viewheight" id="flight1">
+        <div class="slide-Indigo">
+            <h2>Indigo</h2>
+            <br>
+            <br>
+            <div class="left">
+                <p>
+                    IndiGo, India's largest and most popular low-cost carrier, has been a game-changer in the country's aviation industry. Known for its punctuality and efficiency, IndiGo has consistently provided passengers with affordable yet quality air travel experiences. With a vast domestic network and a growing international presence, IndiGo is a preferred choice for travelers seeking reliability and budget-friendly options.
+                </p>
+            </div>
+            <div class="img_right">
+                <img src="{{ url_for('static', filename='Indigo_average_pricing.png') }}" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight 2 section -->
+    <section class="flight2 viewheight" id="flight2">
+        <div class="slide-GoFirst">
+            <h2>GoFirst</h2>
+            <br>
+            <br>
+            <div class="right">
+                <p>
+                    Formerly known as GoAir, GoFirst is a dynamic airline that focuses on delivering a seamless and enjoyable travel experience. Recognized for its commitment to customer satisfaction, GoFirst is dedicated to offering competitive fares without compromising on service quality. The airline has a strong domestic footprint and is expanding its reach to cater to the diverse needs of passengers across India. 
+                </p>
+            </div>
+            <div class="img_left">
+                <img src="{{ url_for('static', filename='GO_FIRST_average_pricing.png') }}" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight 3 section -->
+    <section class="flight3 viewheight" id="flight3">
+        <div class="slide-Vistara">
+            <h2>Vistara</h2>
+            <br>
+            <br>
+            <div class="left">
+                <p>
+                    Vistara, a joint venture between Tata Sons and Singapore Airlines, stands out for its commitment to luxury and personalized service. As a full-service carrier, Vistara offers a premium flying experience with its modern fleet and well-crafted services. With a focus on hospitality and attention to detail, Vistara appeals to travelers seeking a sophisticated and comfortable journey within India and beyond. 
+                </p>
+            </div>
+            <div class="img_right">
+                <img src="{{ url_for('static', filename='Vistara_average_pricing.png') }}" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight 4 section -->
+    <section class="flight4 viewheight" id="flight4">
+        <div class="slide-AirAsia">
+            <h2>Air Asia</h2>
+            <br>
+            <br>
+            <div class="right">
+                <p>
+                    AirAsia, a renowned low-cost carrier with a global presence, has left its mark on the Indian aviation scene. Focused on making air travel accessible to all, AirAsia is known for its affordability and extensive network. The airline provides a no-frills yet comfortable travel experience, making it a popular choice for those looking for economical and efficient flights.
+                </p>
+            </div>
+            <div class="img_left">
+                <img src="{{ url_for('static', filename='AirAsia_average_pricing.png') }}" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight 5 section -->
+    <section class="flight5 viewheight" id="flight5">
+        <div class="slide-AirIndia">
+            <h2>Air India</h2>
+            <br />
+            <div class="left">
+                <p>
+                    As the flag carrier of India, Air India holds a special place in the nation's aviation history. With a rich legacy and a diverse range of services, Air India connects the country to various international destinations. The airline offers a blend of traditional hospitality and modern amenities, making it a preferred choice for travelers seeking a touch of Indian warmth combined with global connectivity. 
+                </p>
+            </div>
+            <div class="img_right">
+                <img src="{{ url_for('static', filename='Air_India_average_pricing.png') }}" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight 6 section -->
+    <section class="flight6 viewheight" id="flight6">
+        <div class="slide-SpiceJet">
+            <h2>SpiceJet</h2>
+            <br>
+            <br>
+            <div class="right">
+                <p>
+                    SpiceJet, a leading low-cost carrier, has played a significant role in revolutionizing air travel in India. Known for its innovative approach and competitive pricing, SpiceJet has become synonymous with accessible and reliable air transportation. The airline's extensive domestic network and affordable fares make it a top choice for budget-conscious travelers without compromising on quality service.
+                </p>
+            </div>
+            <div class="img_left">
+                <img src="{{ url_for('static', filename='SpiceJet_average_pricing.png') }}" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="end-section" id="contact">
+        <h3>Thank You!</h3>
+        <p>Detailed analysis along with presentation and raw Python code can be found on our Github</p>
+        <div class="end-icons">
+            <a href="https://github.com/VaibhavMugulavalli/Flight-Data-Analysis"><i class='bx bxl-github'></i></a>
+        </div>
+    </section>
+
+    <!-- Scroll Button -->
+    <a href="#" class="scroll-bttn"><i class="bx bx-chevron-up"></i></a>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom JS file link -->
+    <script src="{{ url_for('static', filename='flightproject.js') }}"></script>
+</body>
+</html>
